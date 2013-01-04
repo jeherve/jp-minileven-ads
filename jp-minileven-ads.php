@@ -29,7 +29,7 @@ add_action( 'wp_head', 'jp_mini_ads_maybe_add_filter' );
 
 // Show Ads
 function jp_mini_ads_show_ads( $content ) {
-	$options = get_option('jp_mini_ads_strings');
+	$options = get_option( 'jp_mini_ads_strings' );
 	$ads = '
 	<script type="text/javascript">
 	<!--
