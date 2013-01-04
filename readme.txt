@@ -13,7 +13,7 @@ Adds Adsense ads after the content on post pages, in Jetpack Mobile theme
 
 Important: for this plugin to work, you must activate [Jetpack](http://wordpress.org/extend/plugins/jetpack/) first, and activate the Mobile Theme module.
 
-This plugin is a work in progress. You can report issues [here](http://wordpress.org/extend/plugins/jetpack-mobile-theme-adsense/), or submit a pull request [on GitHub](https://github.com/jeherve/jp-minileven-ads).
+This plugin is a work in progress. You can report issues [here](http://wordpress.org/extend/plugins/jetpack-mobile-theme-ads/), or submit a pull request [on GitHub](https://github.com/jeherve/jp-minileven-ads).
 
 
 == Installation ==
