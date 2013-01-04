@@ -22,7 +22,7 @@ This plugin is a work in progress. You can report issues [here](http://wordpress
 2. Activate the Mobile Theme module
 3. Install the Jetpack Mobile Theme Featured images plugin via the WordPress.org plugin repository, or via your dashboard
 4. Activate the plugin
-5. Go to Settings > Mobile Ads in your dashboard, and enter your Adsense settings
+5. Go to Settings > Mobile Ads Settings in your dashboard, and enter your Adsense settings
 6. Enjoy :)
 
 == Changelog ==
