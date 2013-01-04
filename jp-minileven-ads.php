@@ -27,7 +27,7 @@ function jp_mini_ads_maybe_add_filter() {
 }
 add_action( 'wp_head', 'jp_mini_ads_maybe_add_filter' );
 
-// Ads
+// Show Ads
 function jp_mini_ads_show_ads( $content ) {
 	$options = get_option('jp_mini_ads_strings');
 	$ads = '
@@ -39,7 +39,7 @@ function jp_mini_ads_show_ads( $content ) {
 	google_ad_height = '. $options['google_ad_height'] .';
 	//-->
 	</script>
-	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js?ver=3.6-alpha-23230"></script>
+	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 	';
 
 	return $content . $ads;
@@ -52,8 +52,8 @@ function jp_mini_ads_show_ads( $content ) {
 add_action( 'admin_init', 'jp_mini_ads_init' );
 add_action( 'admin_menu', 'jp_mini_ads_add_page' );
 
-// Init plugin options to white list our options
-function jp_mini_ads_init(){
+// Init plugin options
+function jp_mini_ads_init() {
 	register_setting( 'jp_mini_ads_options', 'jp_mini_ads_strings', 'jp_mini_ads_validate' );
 }
 
@@ -85,7 +85,7 @@ function jp_mini_ads_do_page() {
 				</tr>
 			</table>
 			<p class="submit">
-			<input type="submit" class="button-primary" value="<?php _e( 'Save Changes' ) ?>" />
+			<input type="submit" class="button-primary" value="<?php _e( 'Save Changes', 'jetpack' ) ?>" />
 			</p>
 		</form>
 	</div>
