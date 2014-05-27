@@ -9,7 +9,7 @@
  * License: GPL2+
  * Text Domain: jetpack
  */
- 
+
 // Check if we are on mobile
 // Props @saracannon http://ran.ge/2012/12/05/parallax-and-mobile/
 function jp_mini_ads_is_mobile_or_tablet() {
@@ -89,7 +89,7 @@ function jp_mini_ads_do_page() {
 			</p>
 		</form>
 	</div>
-	<?php	
+	<?php
 }
 
 // Sanitize and validate input. Accepts an array, return a sanitized array.
@@ -99,6 +99,6 @@ function jp_mini_ads_validate($input) {
 	$input['google_ad_slot'] =  wp_filter_nohtml_kses($input['google_ad_slot']);
 	$input['google_ad_width'] =  wp_filter_nohtml_kses($input['google_ad_width']);
 	$input['google_ad_height'] =  wp_filter_nohtml_kses($input['google_ad_height']);
-	
+
 	return $input;
 }
