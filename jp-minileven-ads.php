@@ -11,18 +11,23 @@
  */
 
 // Check if we are on mobile
-// Props @saracannon http://ran.ge/2012/12/05/parallax-and-mobile/
-function jp_mini_ads_is_mobile_or_tablet() {
-    if ( ! class_exists( 'Jetpack_User_Agent_Info' ) )
-    	return false;
+function jp_mini_ads_is_mobile() {
+	// Are Jetpack Mobile functions available?
+	if ( ! function_exists( 'jetpack_is_mobile' ) ) {
+		return false;
+	}
 
-    $ua_info = new Jetpack_User_Agent_Info();
-    return ( jetpack_is_mobile() || $ua_info->is_tablet() );
+	// Is Mobile theme showing?
+	if ( isset( $_COOKIE['akm_mobile'] ) && $_COOKIE['akm_mobile'] == 'false' ) {
+		return false;
+	}
+
+	return jetpack_is_mobile();
 }
 
 // On Mobile, and on a single page? Let's add the ads
 function jp_mini_ads_maybe_add_filter() {
-	if ( jp_mini_ads_is_mobile_or_tablet() && is_singular() )
+	if ( jp_mini_ads_is_mobile() && is_singular() )
 		add_filter( 'the_content', 'jp_mini_ads_show_ads' );
 }
 add_action( 'wp_head', 'jp_mini_ads_maybe_add_filter' );
