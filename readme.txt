@@ -1,8 +1,8 @@
-=== Jetpack Mobile Theme Ads ===
+=== Mobile Theme Ads for Jetpack ===
 Contributors: jeherve
 Tags: WordPress.com, Jetpack, mobile, minileven, adsense, ads
-Requires at least: 3.3
-Tested up to: 3.5
+Requires at least: 3.5
+Tested up to: 3.8
 Stable tag: 1.0
 
 Adds Adsense ads after the content on post pages, in Jetpack Mobile theme
