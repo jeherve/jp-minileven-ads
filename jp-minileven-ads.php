@@ -192,10 +192,9 @@ function jp_mini_ads_do_page() {
 function jp_mini_ads_validate( $input ) {
 
 	$input['google_ad_client']  = absint( $input['google_ad_client'] );
-	//wp_filter_nohtml_kses( $input['google_ad_client'] );
-	$input['google_ad_slot']    = wp_filter_nohtml_kses( $input['google_ad_slot'] );
-	$input['google_ad_width']   = wp_filter_nohtml_kses( $input['google_ad_width'] );
-	$input['google_ad_height']  = wp_filter_nohtml_kses( $input['google_ad_height'] );
+	$input['google_ad_slot']    = absint( $input['google_ad_slot'] );
+	$input['google_ad_width']   = absint( $input['google_ad_width'] );
+	$input['google_ad_height']  = absint( $input['google_ad_height'] );
 
 	return $input;
 }
