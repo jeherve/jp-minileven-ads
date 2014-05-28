@@ -180,6 +180,20 @@ function jp_mini_ads_do_page() {
 				</tr>
 			</table>
 
+			<h3><?php _e( 'Custom ads', 'jetpack' ); ?></h3>
+
+			<p><?php _e( 'If you want to use another ad network, you can enter the ad embed code below:', 'jetpack' ); ?></p>
+
+			<table class="form-table">
+				<tr valign="top">
+					<td><textarea class="widefat" id="jp_mini_ads_custom_code" name="jp_mini_ads_strings[custom_ad_code]" rows="8" cols="20"><?php
+						if ( isset( $options['custom_ad_code'] ) ) {
+							echo $options['custom_ad_code'];
+						}
+						?></textarea></td>
+				</tr>
+			</table>
+
 			<p class="submit">
 				<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save configuration', 'jetpack' ); ?>" />
 			</p>
@@ -191,10 +205,20 @@ function jp_mini_ads_do_page() {
 // Sanitize and validate input. Accepts an array, return a sanitized array.
 function jp_mini_ads_validate( $input ) {
 
+	$allowed_html = array(
+		'a' => array(
+			'href' => array(),
+		),
+		'img' => array(
+			'src' => array(),
+		),
+	);
+
 	$input['google_ad_client']  = absint( $input['google_ad_client'] );
 	$input['google_ad_slot']    = absint( $input['google_ad_slot'] );
 	$input['google_ad_width']   = absint( $input['google_ad_width'] );
 	$input['google_ad_height']  = absint( $input['google_ad_height'] );
+	$input['custom_ad_code']    = wp_kses( $input['custom_ad_code'], $allowed_html );
 
 	return $input;
 }
