@@ -33,7 +33,7 @@ function jp_mini_ads_maybe_add_filter() {
 
 	$options = get_option( 'jp_mini_ads_strings' );
 
-	if ( isset( $options['show']['front'] ) && is_home() || is_front_page() ) {
+	if ( isset( $options['show']['front'] ) && is_home() || is_front_page() || is_search() || is_archive() ) {
 		add_filter( 'the_content', 'jp_mini_ads_show_ads' );
 	}
 
@@ -158,7 +158,7 @@ function jp_mini_ads_do_page() {
 					<td>
 						<label>
 						<input type="checkbox" name="jp_mini_ads_strings[show]" value="1" <?php checked( 1, $options['show']['front'], true ); ?> />
-						<?php _e( 'Front Page', 'jp_mini_ads' ); ?>
+						<?php _e( 'Front Page, Archive Pages, and Search Results', 'jp_mini_ads' ); ?>
 						</label>
 						<br>
 						<label>
