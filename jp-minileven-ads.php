@@ -113,6 +113,19 @@ function jp_mini_ads_do_page() {
 	?>
 	<div class="wrap">
 		<h2><?php _e( 'Mobile Ads Settings', 'jp_mini_ads' ); ?></h2>
+
+		<?php if ( ! class_exists( 'Jetpack' ) || ! Jetpack::is_module_active( 'minileven' ) ) : ?>
+			<div class="error"><p>
+				<?php
+				printf(__( 'To use the Mobile Ads plugin, you\'ll need to install and activate <a href="%1$s">Jetpack</a> first, and <a href="%2$s">activate the Mobile Theme module</a>.'),
+				'plugin-install.php?tab=search&s=jetpack&plugin-search-input=Search+Plugins',
+				'admin.php?page=jetpack_modules',
+				'jp_mini_ads'
+				);
+				?>
+			</p></div>
+		<?php endif; // End check if Jetpack and the Mobile Theme are active ?>
+
 		<form method="post" action="options.php">
 			<?php
 
