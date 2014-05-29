@@ -229,7 +229,7 @@ function jp_mini_ads_do_page() {
 // Sanitize and validate input. Accepts an array, return a sanitized array.
 function jp_mini_ads_validate( $input ) {
 
-	$input['google_ad_client']  = absint( $input['google_ad_client'] );
+	$input['google_ad_client']  = wp_filter_nohtml_kses( $input['google_ad_client'] );
 	$input['google_ad_slot']    = absint( $input['google_ad_slot'] );
 	$input['google_ad_width']   = absint( $input['google_ad_width'] );
 	$input['google_ad_height']  = absint( $input['google_ad_height'] );
