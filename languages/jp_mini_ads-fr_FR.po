@@ -1,0 +1,98 @@
+# Translation of 1.1 in French (France)
+# This file is distributed under the same license as the 1.1 package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-05-29 01:42:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: 1.1\n"
+
+#: jp-minileven-ads.php:203
+msgid "If you want to use another ad network or your own custom ads or videos, you can enter a custom ad embed code below:"
+msgstr "Si vous souhaitez utiliser une autre régie publicitaire ou vos propres pubs ou vidéos, vous pouvez entrer votre code personnalisé ci-dessous&nbsp;:"
+
+msgid "Adds ads before or after your posts and pages, in Jetpack's Mobile theme"
+msgstr "Ajoutez des publicités au début ou à la fin de vos articles et pages, dans le thème pour mobiles de Jetpack"
+
+#: jp-minileven-ads.php:112
+msgid "Mobile Ads"
+msgstr "Pubs pour mobile"
+
+#: jp-minileven-ads.php:112 jp-minileven-ads.php:120
+msgid "Mobile Ads Settings"
+msgstr "Réglages des pubs pour mobile"
+
+#: jp-minileven-ads.php:125
+msgid "To use the Mobile Ads plugin, you'll need to install and activate <a href=\"%1$s\">Jetpack</a> first, and <a href=\"%2$s\">activate the Mobile Theme module</a>."
+msgstr "Pour utiliser cette extension, vous devrez tout d&rsquo;abord installer et activer <a href=\"%1$s\">Jetpack</a>, puis <a href=\"%2$s\">activer le Thème pour portables</a>."
+
+#: jp-minileven-ads.php:155
+msgid "Ad placement"
+msgstr "Emplacement des pubs"
+
+#: jp-minileven-ads.php:158
+msgid "Would you like ads to be displayed before the post content?"
+msgstr "Souhaitez-vous que les pubs apparaissent avant le contenu&nbsp;?"
+
+#: jp-minileven-ads.php:162
+msgid "Show ads on:"
+msgstr "Afficher les pubs sur&nbsp;:"
+
+#: jp-minileven-ads.php:166
+msgid "Front Page, Archive Pages, and Search Results"
+msgstr "Page d&rsquo;accueil, pages d&rsquo;archives, et pages de résultats de recherche"
+
+#: jp-minileven-ads.php:171
+msgid "Posts"
+msgstr "Articles"
+
+#: jp-minileven-ads.php:176
+msgid "Pages"
+msgstr "Pages"
+
+#: jp-minileven-ads.php:182
+msgid "Ad code"
+msgstr "Code de vos pubs"
+
+#: jp-minileven-ads.php:184
+msgid "If you want to add Google Adsense ads, fill in the fields below:"
+msgstr "Si vous souhaitez utiliser Google Adsense, remplissez les champs ci-dessous&nbsp;:"
+
+#: jp-minileven-ads.php:187
+msgid "Enter your google_ad_client ID here:"
+msgstr "Entrez votre ID google_ad_client ici&nbsp;:"
+
+#: jp-minileven-ads.php:190
+msgid "Enter your google_ad_slot ID here:"
+msgstr "Entrez votre ID google_ad_slot ici&nbsp;:"
+
+#: jp-minileven-ads.php:193
+msgid "Enter the ad width here:"
+msgstr "Entrez la largeur de la pub ici&nbsp;:"
+
+#: jp-minileven-ads.php:196
+msgid "Enter the ad height here:"
+msgstr "Entrez la hauteur de la pub ici&nbsp;:"
+
+#: jp-minileven-ads.php:201
+msgid "Custom ads"
+msgstr "Pubs personnalisées"
+
+#: jp-minileven-ads.php:216
+msgid "Save configuration"
+msgstr "Sauvegarder"
+
+msgid "Mobile Theme Ads for Jetpack"
+msgstr "Pubs pour le Thème pour portables de Jetpack"
+
+msgid "http://wordpress.org/plugins/jetpack-mobile-theme-ads/"
+msgstr "http://wordpress.org/plugins/jetpack-mobile-theme-ads/"
+
+msgid "Jeremy Herve"
+msgstr "Jeremy Herve"
+
+msgid "http://jeremyherve.com"
+msgstr "http://jeremyherve.com"
