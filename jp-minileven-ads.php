@@ -131,8 +131,6 @@ function jp_mini_ads_do_page() {
 			</p></div>
 		<?php endif; // End check if Jetpack and the Mobile Theme are active ?>
 
-		<p><?php _e( 'By default, this plugin will place ads at the bottom of your content, on Posts and Pages. You can use the options below to change this default behaviour.', 'jp_mini_ads' ); ?></p>
-
 		<form method="post" action="options.php">
 			<?php
 
