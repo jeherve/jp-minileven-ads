@@ -64,15 +64,11 @@ function jp_mini_ads_show_ads( $content ) {
 	$options = get_option( 'jp_mini_ads_strings' );
 
 	$ads = '
-	<script type="text/javascript">
-	<!--
-	google_ad_client = "'. $options['google_ad_client'] .'";
-	google_ad_slot = "'. $options['google_ad_slot'] .'";
-	google_ad_width = '. $options['google_ad_width'] .';
-	google_ad_height = '. $options['google_ad_height'] .';
-	//-->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle" style="display:inline-block;width:'. $options['google_ad_width'] .'px;height:'. $options['google_ad_height'] .'px" data-ad-client="'. $options['google_ad_client'] .'" data-ad-slot="'. $options['google_ad_slot'] .'"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-	<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 	';
 
 	// Allow custom ads instead of Google Adsense
