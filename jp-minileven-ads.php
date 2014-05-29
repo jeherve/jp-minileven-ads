@@ -75,7 +75,7 @@ function jp_mini_ads_show_ads( $content ) {
 	$ads = apply_filters( 'jp_mini_ads_output', $ads );
 
 	// Wrap the ads around a div, for styling
-	$ads = '<div class="sharedaddy jp_mini_ads">' . $ads . '</div>';
+	$ads = '<div class="sharedaddy jp_mini_ads" style="max-width:100%;text-align:center;">' . $ads . '</div>';
 
 	// Change ad placement if option is checked
 	if ( isset( $options['before_content'] ) ) {
