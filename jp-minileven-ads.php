@@ -93,7 +93,7 @@ function jp_mini_ads_show_ads( $content ) {
 function jp_mini_ads_custom_code( $ads ) {
 	$options = get_option( 'jp_mini_ads_strings' );
 
-	if ( isset( $options['custom_ad_code'] ) ) {
+	if ( ! empty( $options['custom_ad_code'] ) ) {
 		return $options['custom_ad_code'];
 	} else {
 		return $ads;
