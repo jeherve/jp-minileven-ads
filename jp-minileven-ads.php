@@ -2,9 +2,9 @@
 /*
  * Plugin Name: Mobile Theme Ads for Jetpack
  * Plugin URI: http://wordpress.org/plugins/jetpack-mobile-theme-ads/
- * Description: Adds Adsense ads before or after the content on post pages, in Jetpack Mobile theme
+ * Description: Adds ads before or after your posts and pages, in Jetpack's Mobile theme
  * Author: Jeremy Herve
- * Version: 1.0
+ * Version: 1.1
  * Author URI: http://jeremyherve.com
  * License: GPL2+
  * Text Domain: jp_mini_ads
@@ -198,9 +198,9 @@ function jp_mini_ads_do_page() {
 				</tr>
 			</table>
 
-			<h3><?php _e( 'Custom ads', 'jetpack' ); ?></h3>
+			<h3><?php _e( 'Custom ads', 'jp_mini_ads' ); ?></h3>
 
-			<p><?php _e( 'If you want to use another ad network, you can enter the ad embed code you received below:', 'jetpack' ); ?></p>
+			<p><?php _e( 'If you want to use another ad network or your own custom ads or videos, you can enter a custom ad embed code below:', 'jp_mini_ads' ); ?></p>
 
 			<table class="form-table">
 				<tr valign="top">
@@ -213,7 +213,7 @@ function jp_mini_ads_do_page() {
 			</table>
 
 			<p class="submit">
-				<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save configuration', 'jetpack' ); ?>" />
+				<input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save configuration', 'jp_mini_ads' ); ?>" />
 			</p>
 		</form>
 	</div>
