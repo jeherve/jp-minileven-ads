@@ -10,6 +10,12 @@
  * Text Domain: jp_mini_ads
  */
 
+// Load language files
+function jp_mini_ads_textdomain() {
+	load_plugin_textdomain( 'jp_mini_ads', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+add_action( 'plugins_loaded', 'jp_mini_ads_textdomain' );
+
 // Check if we are on mobile
 function jp_mini_ads_is_mobile() {
 	// Are Jetpack Mobile functions available?
