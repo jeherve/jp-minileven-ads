@@ -16,6 +16,9 @@ function jp_mini_ads_textdomain() {
 }
 add_action( 'plugins_loaded', 'jp_mini_ads_textdomain' );
 
+/*
+ * Frontend
+ */
 // Check if we are on mobile
 function jp_mini_ads_is_mobile() {
 	// Are Jetpack Mobile functions available?
@@ -56,7 +59,7 @@ function jp_mini_ads_maybe_add_filter() {
 }
 add_action( 'wp_head', 'jp_mini_ads_maybe_add_filter' );
 
-// Show Ads
+// Display Ads
 function jp_mini_ads_show_ads( $content ) {
 	$options = get_option( 'jp_mini_ads_strings' );
 
@@ -86,7 +89,7 @@ function jp_mini_ads_show_ads( $content ) {
 	}
 }
 
-// Custom ad embed code
+// Add the option to use custom ad embed code
 function jp_mini_ads_custom_code( $ads ) {
 	$options = get_option( 'jp_mini_ads_strings' );
 
@@ -201,7 +204,7 @@ function jp_mini_ads_do_page() {
 
 			<h3><?php _e( 'Custom ads', 'jetpack' ); ?></h3>
 
-			<p><?php _e( 'If you want to use another ad network, you can enter the ad embed code below:', 'jetpack' ); ?></p>
+			<p><?php _e( 'If you want to use another ad network, you can enter the ad embed code you received below:', 'jetpack' ); ?></p>
 
 			<table class="form-table">
 				<tr valign="top">
