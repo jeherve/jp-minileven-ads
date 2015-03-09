@@ -2,8 +2,8 @@
 Contributors: jeherve
 Tags: WordPress.com, Jetpack, mobile, minileven, adsense, ads
 Requires at least: 3.9
-Tested up to: 4.1
-Stable tag: 1.1
+Tested up to: 4.2
+Stable tag: 1.2
 
 Adds ads before or after your posts and pages, in Jetpack's Mobile theme
 
@@ -32,6 +32,9 @@ This plugin is a work in progress. You can report issues [here](http://wordpress
 You can remove the custom code you placed in the Custom Ads field, save your changes, and the plugin will start using Google Adsense again.
 
 == Changelog ==
+
+= 1.2 =
+* Change sanitization for Google Ad Slot ID to avoid problems when the ID is too long
 
 = 1.1 =
 * Improve the Mobile Theme detection to avoid showing ads when not using the Mobile Theme

@@ -4,8 +4,8 @@
  * Plugin URI: http://wordpress.org/plugins/jetpack-mobile-theme-ads/
  * Description: Adds ads before or after your posts and pages, in Jetpack's Mobile theme
  * Author: Jeremy Herve
- * Version: 1.1
- * Author URI: http://jeremyherve.com
+ * Version: 1.2
+ * Author URI: http://jeremy.hu
  * License: GPL2+
  * Text Domain: jp_mini_ads
  */
