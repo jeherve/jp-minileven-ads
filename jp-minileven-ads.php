@@ -4,7 +4,7 @@
  * Plugin URI: http://wordpress.org/plugins/jetpack-mobile-theme-ads/
  * Description: Adds ads before or after your posts and pages, in Jetpack's Mobile theme
  * Author: Jeremy Herve
- * Version: 1.2
+ * Version: 1.2.1
  * Author URI: http://jeremy.hu
  * License: GPL2+
  * Text Domain: jp_mini_ads
@@ -162,17 +162,17 @@ function jp_mini_ads_do_page() {
 					<th scope="row"><?php _e( 'Show ads on:', 'jp_mini_ads' ); ?></th>
 					<td>
 						<label>
-						<input type="checkbox" name="jp_mini_ads_strings[show]" value="1" <?php checked( 1, $options['show']['front'], true ); ?> />
+						<input type="checkbox" name="jp_mini_ads_strings[show][front]" value="1" <?php if ( isset( $options['show']['front'] ) ) echo 'checked="checked"'; ?> />
 						<?php _e( 'Front Page, Archive Pages, and Search Results', 'jp_mini_ads' ); ?>
 						</label>
 						<br>
 						<label>
-						<input type="checkbox" name="jp_mini_ads_strings[show]" value="1" <?php checked( 1, $options['show']['post'], true ); ?> />
+						<input type="checkbox" name="jp_mini_ads_strings[show][post]" value="1" <?php if ( isset( $options['show']['post'] ) ) echo 'checked="checked"'; ?> />
 						<?php _e( 'Posts', 'jp_mini_ads' ); ?>
 						</label>
 						<br>
 						<label>
-						<input type="checkbox" name="jp_mini_ads_strings[show]" value="1" <?php checked( 1, $options['show']['page'], true ); ?> />
+						<input type="checkbox" name="jp_mini_ads_strings[show][page]" value="1" <?php if ( isset( $options['show']['page'] ) ) echo 'checked="checked"'; ?> />
 						<?php _e( 'Pages', 'jp_mini_ads' ); ?>
 						</label>
 					</td>
